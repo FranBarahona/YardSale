@@ -1,5 +1,6 @@
 @import url(/css/global.css);
 @import url(/css/EmailConfirm.css);
+@import url(/css/login.css);
 body{
     margin:0;
 }
@@ -42,7 +43,7 @@ body{
 }
 .label{
     font-size: var(--sm);
-    font-weight: bold;
+    font-weight:bold;
     margin-bottom: 4px;
 }
 .input{
@@ -65,13 +66,30 @@ body{
     font-weight:bold;
     height:52px;
 }
+.secondary-button{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green); 
+    color:var(--hospital-green);
+    width:100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight:bold;
+    height:52px;
+}
 .login-button{
     margin-top: 14px;
     margin-bottom:30px;
 }
 
 @media (max-width:640px) {  
+    .form-container{
+        margin-top:40%;
+    }
     .logo{
         display:block;
+    }
+    .signup-button{
+        margin-top: 140px;
     }
 }
